@@ -1,0 +1,5 @@
+* {
+    transition: .3s ease-in-out;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: var(--texto);
+}

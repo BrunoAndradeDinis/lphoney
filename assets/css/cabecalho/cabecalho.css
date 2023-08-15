@@ -1,0 +1,62 @@
+.cabecalho {
+    background-color: var(--fundo-preto);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: .3rem;
+    border-bottom: 1px solid var(--texto);
+    height: 4rem;
+    width: 100vw;
+}
+
+.cabecalho .titulo {
+    height: 3rem;
+    overflow: hidden;
+}
+
+.cabecalho .titulo:hover {
+    transform: scale(.9);
+}
+
+.cabecalho .titulo h1 a span {
+    display: inline-block;
+    color: var(--texto);
+    position: relative;
+    top: -.9rem;
+    left: -2rem;
+}
+
+.cabecalho .navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    right: 1rem;
+}
+
+.cabecalho .navegacao ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cabecalho .navegacao ul li {
+    height: .8rem;
+    width: .5rem;
+}
+.cabecalho .navegacao ul li a {
+    display: inline-block;
+    line-height: 0;
+    font-weight: 900;
+}
+
+.cabecalho .navegacao ul li a:hover {
+    color: var(--hana);
+}
+
+.cor-default {
+    color: #D9D9D9;
+}
+.cor-ativado {
+    color: var(--hana);
+}

@@ -13,25 +13,42 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/variaveis.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
     <style>
-        .cabecalho {
-            background-color: var(--fundo-preto);
+        .principal__inicial {
             display: flex;
-            align-items: baseline;
             justify-content: center;
-            padding: .3rem;
-            border-bottom: 1px solid var(--texto);
+            align-items: center;
+            background-color: var(--fundo-preto);
+            height: 90.4vh;
+            width: 100vw;
         }
-        .cabecalho .titulo {
-            height: 3rem;
+
+        .principal__conteudo {
+            display: flex;
             overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
         }
-        .cabecalho .titulo h1 a span {
-            display: inline-block;
-            color: var(--texto);
-            position: relative;
-            top: -.9rem;
-            left: -2rem;
+
+        .principal__conteudo .kanji {
+            height: 6rem;
+            width: 6rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .principal__conteudo .kanji img {
+            transform: scale(.3);
+        }
+
+        .principal__conteudo p {
+            font-size: 2rem;
         }
     </style>
 </head>
@@ -46,16 +63,52 @@
                 </a>
             </h1>
         </div>
-        <nav></nav>
+        <div class="navegacao">
+            <nav>
+                <ul>
+                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#" class="cor-default">●</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- conteúdo -->
     <main class="principal">
-        <section>
+        <section class="principal__inicial">
+
+            <div class="principal__conteudo ">
+                <div class="kanji">
+                    <img src="./assets/images/LOGO ROSA 1.png" alt="Kanji de Hana, logo">
+                </div>
+                <p>é</p><span></span>
+            </div>
 
         </section>
     </main>
     <!-- rodapé -->
 
+    <script>
+        var lista = document.querySelectorAll("li a")
+        lista.forEach(li => {
+            li.addEventListener("click", evento => {
+                let elemento = evento.target
+
+                lista.forEach(a => {
+                    a.classList.remove('cor-ativado')
+                    a.classList.add('cor-default')
+                })
+
+                if (elemento.classList.contains('cor-default')) {
+                    elemento.classList.remove('cor-default')
+                    elemento.classList.add('cor-ativado')
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
