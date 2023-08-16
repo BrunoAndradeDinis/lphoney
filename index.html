@@ -19,6 +19,7 @@
     <style>
         .principal__inicial {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: var(--fundo-preto);
@@ -49,6 +50,46 @@
 
         .principal__conteudo p {
             font-size: 2rem;
+        }
+
+        /* Animação */
+        /* Estilos do contêiner da animação */
+        .container-animacao {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        /* Estilos da animação de digitação */
+        .animacao-digitacao {
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        /* Estilos do cursor de digitação */
+        .cursor-digitacao {
+            display: inline-block;
+            animation: piscar 0.7s infinite;
+        }
+
+        /* Animação de digitação - estilos */
+        @keyframes digitacao {
+            from {
+                width: 0;
+            }
+        }
+
+        /* Animação de piscar do cursor - estilos */
+        @keyframes piscar {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -84,9 +125,14 @@
                 <div class="kanji">
                     <img src="./assets/images/LOGO ROSA 1.png" alt="Kanji de Hana, logo">
                 </div>
-                <p>é</p><span></span>
+                <p>é</p>
             </div>
-
+            <div class="container-animacao">
+                <div class="animacao-digitacao">
+                    <span id="palavra"></span>
+                    <span id="cursor" class="cursor-digitacao">|</span>
+                </div>
+            </div>
         </section>
     </main>
     <!-- rodapé -->
@@ -109,6 +155,7 @@
             })
         })
     </script>
+    <script src="./assets/js/animacao.js"></script>
 </body>
 
 </html>
