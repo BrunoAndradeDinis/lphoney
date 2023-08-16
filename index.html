@@ -16,81 +16,10 @@
     <link rel="stylesheet" href="./assets/css/base.css">
 
     <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/principal/principal_animacao.css">
+
     <style>
-        .principal__inicial {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--fundo-preto);
-            height: 90.4vh;
-            width: 100vw;
-        }
 
-        .principal__conteudo {
-            display: flex;
-            overflow: hidden;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-        }
-
-        .principal__conteudo .kanji {
-            height: 6rem;
-            width: 6rem;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .principal__conteudo .kanji img {
-            transform: scale(.3);
-        }
-
-        .principal__conteudo p {
-            font-size: 2rem;
-        }
-
-        /* Animação */
-        /* Estilos do contêiner da animação */
-        .container-animacao {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        /* Estilos da animação de digitação */
-        .animacao-digitacao {
-            display: inline-block;
-            padding-right: 5px;
-        }
-
-        /* Estilos do cursor de digitação */
-        .cursor-digitacao {
-            display: inline-block;
-            animation: piscar 0.7s infinite;
-        }
-
-        /* Animação de digitação - estilos */
-        @keyframes digitacao {
-            from {
-                width: 0;
-            }
-        }
-
-        /* Animação de piscar do cursor - estilos */
-        @keyframes piscar {
-
-            0%,
-            100% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
     </style>
 </head>
 
@@ -119,19 +48,27 @@
     </header>
     <!-- conteúdo -->
     <main class="principal">
-        <section class="principal__inicial">
+        <section class="principal__animacao">
 
-            <div class="principal__conteudo ">
-                <div class="kanji">
+            <div class="conteudo__animacao ">
+                <div class="conteudo__animacao--kanji">
                     <img src="./assets/images/LOGO ROSA 1.png" alt="Kanji de Hana, logo">
                 </div>
                 <p>é</p>
             </div>
-            <div class="container-animacao">
-                <div class="animacao-digitacao">
+            <div class="container__animacao">
+                <div class="container__animacao--digitacao">
                     <span id="palavra"></span>
-                    <span id="cursor" class="cursor-digitacao">|</span>
+                    <span id="cursor" class="cursor__animacao">|</span>
                 </div>
+            </div>
+        </section>
+        <section class="principal__imagens">
+            <div class="conteudo__imagens">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
         </section>
     </main>

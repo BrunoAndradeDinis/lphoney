@@ -1,0 +1,74 @@
+.principal__animacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-preto);
+    height: 90.4vh;
+    width: 100vw;
+}
+
+.principal__animacao .conteudo__animacao {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.conteudo__animacao .conteudo__animacao--kanji {
+    height: 6rem;
+    width: 6rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo__animacao .conteudo__animacao--kanji img {
+    transform: scale(.3);
+}
+
+.conteudo__animacao p {
+    font-size: 2rem;
+}
+
+/* Animação */
+/* Estilos do contêiner da animação */
+.container__animacao {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Estilos da animação de digitação */
+.container__animacao--digitacao {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/* Estilos do cursor de digitação */
+.cursor__animacao {
+    display: inline-block;
+    animation: piscar 0.7s infinite;
+}
+
+/* Animação de digitação - estilos */
+@keyframes digitacao {
+    from {
+        width: 0;
+    }
+}
+
+/* Animação de piscar do cursor - estilos */
+@keyframes piscar {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
