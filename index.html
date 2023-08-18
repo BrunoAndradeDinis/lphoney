@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="./assets/css/variaveis.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-
+    
+    <link rel="stylesheet" href="./assets/css/principal/principal_container.css">
     <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
     <link rel="stylesheet" href="./assets/css/principal/principal_animacao.css">
+    <link rel="stylesheet" href="./assets/css/principal/principal_info.css">
+    <link rel="stylesheet" href="./assets/css/principal/principal_contato.css">
 
     <style>
 
@@ -25,7 +28,7 @@
 
 <body>
     <!-- cabeçalho -->
-    <header class="cabecalho">
+    <header class="cabecalho" >
         <div class="titulo">
             <h1>
                 <a href="#">
@@ -36,19 +39,18 @@
         <div class="navegacao">
             <nav>
                 <ul>
-                    <li><a href="#" class="cor-default">●</a></li>
-                    <li><a href="#" class="cor-default">●</a></li>
-                    <li><a href="#" class="cor-default">●</a></li>
-                    <li><a href="#" class="cor-default">●</a></li>
-                    <li><a href="#" class="cor-default">●</a></li>
-                    <li><a href="#" class="cor-default">●</a></li>
+                    <li><a href="#conteudo1" class="cor-default">●</a></li>
+                    <li><a href="#conteudo2" class="cor-default">●</a></li>
+                    <li><a href="#conteudo3" class="cor-default">●</a></li>
+                    <li><a href="#conteudo4" class="cor-default">●</a></li>
+                    <li><a href="#conteudo5" class="cor-default">●</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- conteúdo -->
     <main class="principal">
-        <section class="principal__animacao">
+        <section class="principal__animacao principal__container" id="conteudo1">
 
             <div class="conteudo__animacao ">
                 <div class="conteudo__animacao--kanji">
@@ -63,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section class="principal__imagens">
+        <section class="principal__container principal__imagens" id="conteudo2">
             <div class="conteudo__imagens">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -71,28 +73,34 @@
                 <img src="" alt="">
             </div>
         </section>
+        <section class="principal__container principal__info" id="conteudo3">
+            <p>Estúdio de design com foco em branding, identidade visual 
+                e social media. </p>
+                <p>Amplificando arte desde 2020.</p>
+        </section>
+        <section class="principal__container" id="conteudo4">asdasd</section>
+        <section class="principal__container principal__contato" id="conteudo5">
+            <div class="contato__logo">
+                <img src="./assets/images/LOGO ROSA 1.png" alt="Kanji de Hana, logo">
+            </div>
+            <div class="contato__info">
+                <p>
+                    Soluções criativas para o mundo todo direto do interior de SP.
+                </p>
+                <p>
+                    Alguma dúvida? </br>
+                    Entre em contato!
+                </p>
+            </div>
+            <div>
+
+            </div>
+        </section>
     </main>
     <!-- rodapé -->
 
-    <script>
-        var lista = document.querySelectorAll("li a")
-        lista.forEach(li => {
-            li.addEventListener("click", evento => {
-                let elemento = evento.target
-
-                lista.forEach(a => {
-                    a.classList.remove('cor-ativado')
-                    a.classList.add('cor-default')
-                })
-
-                if (elemento.classList.contains('cor-default')) {
-                    elemento.classList.remove('cor-default')
-                    elemento.classList.add('cor-ativado')
-                }
-            })
-        })
-    </script>
     <script src="./assets/js/animacao.js"></script>
+    <script src="./assets/js/navegacao.js"></script>
 </body>
 
 </html>

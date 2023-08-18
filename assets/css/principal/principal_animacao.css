@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-preto);
-    height: 90.4vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
 }
 
 .principal__animacao .conteudo__animacao {
@@ -44,7 +44,6 @@
 /* Estilos da animação de digitação */
 .container__animacao--digitacao {
     display: inline-block;
-    padding-right: 5px;
 }
 
 /* Estilos do cursor de digitação */

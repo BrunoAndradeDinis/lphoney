@@ -1,0 +1,12 @@
+.contato__logo {
+    height: 6rem;
+    width: 6rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__logo img{
+    transform: scale(.3);
+}

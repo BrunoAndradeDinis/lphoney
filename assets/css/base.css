@@ -2,4 +2,24 @@
     transition: .3s ease-in-out;
     font-family: 'Darker Grotesque', sans-serif;
     color: var(--texto);
+    scroll-behavior: smooth;
+    /* tirando a opção de selecionar texto na página */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    
+    -ms-touch-action: manipulation;
+    touch-action: pan-y auto;
+}
+
+body{
+    min-height: 500vh;
+    min-width: 100vw ;
+    max-width: 100vw;
+}
+
+/* tirando a barra de rolagem */
+body::-webkit-scrollbar{
+    width: 0;
 }

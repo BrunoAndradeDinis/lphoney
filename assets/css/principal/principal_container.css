@@ -1,0 +1,21 @@
+.principal {
+    height: 500vh;
+    width: 100vw;
+}
+
+.principal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.principal section:nth-child(odd){
+    background-color: var(--fundo-preto);
+}
+
+.principal section:nth-child(even){
+    background-color: var(--texto);
+}
