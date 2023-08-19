@@ -9,6 +9,7 @@
 }
 
 .contato__logo {
+    margin-top: 4rem;
     height: 6rem;
     width: 6rem;
     overflow: hidden;
@@ -41,4 +42,5 @@
 .contato__info--mail, .contato__info--whats{
     display: flex;
     gap: .5rem;
+    align-items: flex-end;
 }

@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 .conteudo__imagens div {
     display: flex;
@@ -20,7 +21,7 @@
     align-items: center;
     overflow: hidden;
     width: 40%;
-    height: 60%;
+    height: 50%;
 }
 .conteudo__imagens a img {
     height: 100%;

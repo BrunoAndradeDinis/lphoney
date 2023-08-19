@@ -25,27 +25,28 @@ body::-webkit-scrollbar{
 }
 
 .botoes {
-    display: flex;
-    width: 23rem;
-    height: 3rem;
-    font-size: 2rem;
-    border-radius: 0px 0px 5rem 0px;
-    font-weight: 700;
-    line-height: 1rem;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-    cursor: pointer;
-    background: linear-gradient(to right, black 50%, white 50%);
-    background-size: 200% 100%;
+    align-items: start;
+    background: linear-gradient(to right, var(--texto) 50%, var(--fundo-preto) 50%);
     background-position: right bottom;
+    background-size: 200% 100%;
+    border-radius: 0px 0px 5rem 0px;
+    color: var(--texto);
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2rem;
+    justify-content: center;
+    line-height:.5rem;
+    margin: .5rem auto;
+    overflow: hidden;
+    padding: .3rem;
     transition: all .5s ease-out;
-    margin: 1rem auto;
-    color: var(--fundo-preto);
+    width: 30rem;
 }
 
 .botoes:hover{
     transform: scale(.9);
     background-position: left bottom;
-    color: var(--texto);
+    color: var(--fundo-preto);
 }

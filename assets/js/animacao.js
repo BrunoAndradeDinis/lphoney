@@ -1,4 +1,4 @@
-const palavras = ["Branding", "Social media", "Identidade", "Comunicação"];
+const palavras = ["Branding", "Social media", "Identidade", "Comunicação", "Web Dev"];
 const elementoPalavra = document.getElementById("palavra");
 const elementoCursor = document.getElementById("cursor");
 
