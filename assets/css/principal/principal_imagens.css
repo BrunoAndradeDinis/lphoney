@@ -9,7 +9,7 @@
     width: 100%;
     height: 50%;
     display: flex;
-    gap: .5rem;
+    gap: .1rem 0 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -24,8 +24,8 @@
     height: 50%;
 }
 .conteudo__imagens a img {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 80%;
 }
 .conteudo__botao {
     display: flex;
