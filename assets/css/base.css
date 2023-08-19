@@ -23,3 +23,29 @@ body{
 body::-webkit-scrollbar{
     width: 0;
 }
+
+.botoes {
+    display: flex;
+    width: 23rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 0px 0px 5rem 0px;
+    font-weight: 700;
+    line-height: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    margin: 1rem auto;
+    color: var(--fundo-preto);
+}
+
+.botoes:hover{
+    transform: scale(.9);
+    background-position: left bottom;
+    color: var(--texto);
+}

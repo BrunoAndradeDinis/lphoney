@@ -48,6 +48,8 @@
     display: inline-block;
     line-height: 0;
     font-weight: 900;
+    position: absolute;
+    z-index: 999;
 }
 
 .cabecalho .navegacao ul li a:hover {
