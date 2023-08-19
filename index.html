@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="./assets/css/variaveis.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    
-    <link rel="stylesheet" href="./assets/css/principal/principal_container.css">
+
     <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/principal/principal_container.css">
     <link rel="stylesheet" href="./assets/css/principal/principal_animacao.css">
     <link rel="stylesheet" href="./assets/css/principal/principal_info.css">
     <link rel="stylesheet" href="./assets/css/principal/principal_contato.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
 
     <style>
 
@@ -28,7 +29,7 @@
 
 <body>
     <!-- cabeçalho -->
-    <header class="cabecalho" >
+    <header class="cabecalho">
         <div class="titulo">
             <h1>
                 <a href="#">
@@ -74,9 +75,9 @@
             </div>
         </section>
         <section class="principal__container principal__info" id="conteudo3">
-            <p>Estúdio de design com foco em branding, identidade visual 
+            <p>Estúdio de design com foco em branding, identidade visual
                 e social media. </p>
-                <p>Amplificando arte desde 2020.</p>
+            <p>Amplificando arte desde 2020.</p>
         </section>
         <section class="principal__container" id="conteudo4">asdasd</section>
         <section class="principal__container principal__contato" id="conteudo5">
@@ -91,6 +92,33 @@
                     Alguma dúvida? </br>
                     Entre em contato!
                 </p>
+                <div class="contato__info--mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path
+                            d="M18.9574 5.06543L10.5369 5.08594L2.11641 5.04492H2.1123C0.980273 5.04492 0.0820312 6.10723 0.0820312 7.43613V18.5678C0.0820312 19.8967 0.980273 20.959 2.1123 20.959H18.9697C20.1018 20.959 21 19.8967 21 18.5678V7.43613C21 6.10723 20.11 5.06543 18.9574 5.06543ZM18.2971 6.70605L10.7748 13.5844L10.7461 13.609L10.7215 13.6377C10.6312 13.7361 10.5246 13.7484 10.4672 13.7484C10.4098 13.7484 10.3031 13.732 10.217 13.6295L10.1924 13.6008L3.00234 6.67324L10.5369 6.72246L18.2971 6.70605ZM18.9697 19.3184H2.1123C1.96875 19.3184 1.72266 19.0477 1.72266 18.5678V7.69863L9.00703 14.7369C9.37617 15.1471 9.89707 15.385 10.4508 15.3932H10.4754C11.0209 15.3932 11.5295 15.1676 11.9027 14.7738L19.3676 7.94063V18.5678C19.3594 19.0477 19.1133 19.3184 18.9697 19.3184Z"
+                            fill="#EAE2DA" />
+                    </svg><a
+                        href="mailto:oi@hana.studio?subject=Assunto do email&body=Olá Studio Hana!"><strong>oi@hana.studio</strong></a>
+                </div>
+
+                <div class="contato__info--whats">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_208_15)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.3773 2.6158C13.6853 0.929881 11.4352 0.000947594 9.03787 0C4.0983 0 0.0780953 4.00098 0.0761185 8.91885C0.0754596 10.4909 0.488142 12.0254 1.27234 13.378L0.000976562 18L4.75173 16.7597C6.06065 17.4702 7.5344 17.8447 9.03428 17.8453H9.03797C13.977 17.8453 17.9976 13.8439 17.9996 8.92597C18.0006 6.5427 17.0693 4.30171 15.3773 2.6158ZM9.03797 16.3389H9.03492C7.69837 16.3384 6.38743 15.981 5.24383 15.3056L4.97181 15.1449L2.15269 15.8809L2.90518 13.1452L2.72805 12.8648C1.98244 11.6844 1.58862 10.3201 1.58921 8.91941C1.59084 4.83188 4.9323 1.50643 9.04092 1.50643C11.0304 1.50718 12.9006 2.27933 14.3069 3.6806C15.7133 5.08187 16.4873 6.9445 16.4865 8.92538C16.4848 13.0132 13.1434 16.3389 9.03797 16.3389ZM13.1237 10.7866C12.8997 10.6751 11.7988 10.1359 11.5936 10.0615C11.3883 9.98715 11.2391 9.94997 11.0898 10.1731C10.9405 10.3962 10.5114 10.8982 10.3807 11.0469C10.2501 11.1957 10.1195 11.2143 9.89557 11.1027C9.67166 10.9912 8.95016 10.7558 8.09485 9.99655C7.42922 9.40564 6.97978 8.67575 6.84916 8.45266C6.71855 8.22953 6.83528 8.1089 6.94737 7.99781C7.04809 7.89795 7.17128 7.73751 7.28325 7.60735C7.3952 7.47722 7.43251 7.38426 7.50714 7.23553C7.58179 7.08678 7.54448 6.95662 7.48849 6.84507C7.43251 6.73353 6.98471 5.63655 6.79809 5.19033C6.61634 4.75575 6.43172 4.81455 6.29428 4.80775C6.16381 4.80129 6.01438 4.7999 5.86512 4.7999C5.71584 4.7999 5.47326 4.85569 5.26799 5.07878C5.06275 5.30191 4.48431 5.84109 4.48431 6.93804C4.48431 8.03499 5.28666 9.09474 5.39863 9.24348C5.51057 9.39223 6.97758 11.6433 9.22384 12.6087C9.75808 12.8383 10.1752 12.9754 10.5004 13.0782C11.0368 13.2478 11.525 13.2238 11.9108 13.1665C12.341 13.1025 13.2356 12.6273 13.4222 12.1067C13.6088 11.5861 13.6088 11.1399 13.5528 11.0469C13.4969 10.954 13.3476 10.8982 13.1237 10.7866Z"
+                                fill="#EAE2DA" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_208_15">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg><a
+                        href="https://api.whatsapp.com/send?phone=5516993517672&text=Ol%C3%A1%20como%20fa%C3%A7o%20pra%20contratar%20os%20seus%20servi%C3%A7os%3F%20"><strong>(16)
+                            99351-7672</strong></a>
+                </div>
+                <p>Atendimento de segunda à sexta-feira, das 9h às 18h</p>
+
             </div>
             <div>
 
@@ -98,7 +126,10 @@
         </section>
     </main>
     <!-- rodapé -->
-
+    <footer class="rodape">
+        <p>© 2023 HANA. Desenvolvido com &#128156; por <a href="" target="">Bruno Andrade</a>.
+        </p>
+    </footer>
     <script src="./assets/js/animacao.js"></script>
     <script src="./assets/js/navegacao.js"></script>
 </body>

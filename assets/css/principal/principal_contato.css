@@ -1,3 +1,13 @@
+.principal__contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 90vh;
+    font-size: 1rem;
+}
+
 .contato__logo {
     height: 6rem;
     width: 6rem;
@@ -9,4 +19,26 @@
 
 .contato__logo img{
     transform: scale(.3);
+}
+
+.contato__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.contato__info p{
+    width: 25ch;
+    padding: 2rem 0;
+}
+
+.contato__info p:last-child {
+    width: 22ch;
+}
+
+.contato__info--mail, .contato__info--whats{
+    display: flex;
+    gap: .5rem;
 }

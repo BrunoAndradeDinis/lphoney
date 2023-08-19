@@ -1,0 +1,13 @@
+.rodape {
+    background-color: var(--fundo-preto);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    border-top: solid 1px var(--texto);
+}
+
+.rodape a:hover {
+    color: var(--hana);
+}
