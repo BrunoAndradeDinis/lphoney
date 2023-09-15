@@ -71,3 +71,10 @@
         opacity: 1;
     }
 }
+
+/* Media queries */
+@media (min-width: 900px){
+    .agrupamento__animacao {
+        transform: scale(2);
+    }
+}
