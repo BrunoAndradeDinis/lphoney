@@ -3,7 +3,6 @@
     max-height: 100vh;
     overflow: hidden;
     flex-wrap: nowrap;
-    /* flex-direction: row; */
     gap: 1rem;
     justify-content: flex-start;
     align-items: flex-start;
@@ -73,5 +72,12 @@
 .principal__blog-post .conteudo__botao .botoes{
     position: relative;
     z-index: 9999;
-    top: 80vh;
+    top: 85vh;
+}
+
+#storytelling {
+    display: none;
+}
+#identidade {
+    display: none;
 }
