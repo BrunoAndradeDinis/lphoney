@@ -1,0 +1,149 @@
+* {
+    max-height: 100vh !important;
+    z-index: 3;
+}
+body {
+    background-color: var(--fundo-preto);
+    z-index: 999;
+}
+.principal__contato {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__contato section {
+    margin: 0 auto 0 auto;
+}
+
+.principal__contato fieldset {
+    margin: 1rem;
+    background-color: #0c0c0c;
+}
+
+.principal__contato legend {
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 1rem;
+}
+
+.principal__forms {
+    font-size: 1rem;
+    width: 55vw;
+}
+
+.principal__forms input {
+    margin: 1rem;
+}
+
+.principal__forms label {
+    font-size: 2rem;
+}
+
+.principal__forms>* {
+    display: block;
+    margin: 1rem;
+}
+
+.principal__forms #nome,
+.principal__forms #email,
+.principal__forms #whats,
+.principal__forms #projeto {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.principal__forms #projeto {
+    resize: none;
+    height: 20rem;
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.formularios {
+    display: flex;
+    padding-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resposta {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 6rem;
+}
+
+.fechar {
+    font-size: 2rem;
+    position: absolute;
+    top: -3rem;
+    right: 0%;
+    z-index: 99;
+    font-weight: 600;
+}
+
+.fechar:hover,
+.fechar:focus {
+    cursor: pointer;
+}
+
+#fechar {
+    display: none;
+}
+
+.principal__forms {
+    position: relative;
+}
+
+label[for="confirmado"] {
+    margin-left: 2rem;
+    overflow: scroll;
+    width: 80vw;
+    display: block;
+    height: 40vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (max-width: 1100px) {
+
+    textarea {
+        border: 1px solid;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    textarea {
+        border: 1px solid;
+        width: 90% !important;
+        height: 10rem !important;
+    }
+
+    .principal__forms input[placeholder] {
+        width: 90% !important;
+    }
+    fieldset {
+        width: 85vw !important;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 9px;
+    }
+    fieldset {
+        width: 85vw !important;
+    }
+}

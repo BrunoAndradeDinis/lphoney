@@ -20,3 +20,11 @@ lista.forEach(a => {
         div.style.display = "flex"
     });
 });
+
+document.getElementById("fechar").addEventListener('click', function () {
+    document.getElementById('resposta').style.display = 'none'
+})
+
+function iframe (){
+    document.getElementById('resposta').style.display = 'flex'
+}

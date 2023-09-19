@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
 
     <style>
-
+        
     </style>
 </head>
 
@@ -53,6 +53,13 @@
         </aside>
     </header>
     <!-- conteúdo -->
+    <div class="pop_up" id="resposta">
+        <label for="fechar" class="fechar">X</label>
+                <input type="checkbox" id="fechar">
+        <div>
+            <iframe src="./contato.html" frameborder="1" ></iframe>
+        </div>
+    </div>
     <main class="principal">
         <section class="principal__animacao principal__container" id="conteudo1">
 
@@ -92,10 +99,12 @@
                 e social media. </p>
             <p>Amplificando arte desde 2020.</p>
 
-            <div class="conteudo__botao">
-                <button type="button" class="botoes">+ orçamento</button>
+            <div class="principal__info conteudo__botao">
+                <button type="button" class="botoes" onclick="iframe()">+ orçamento</button>
+                
             </div>
         </section>
+        
         <section class="principal__container principal__blog-post" id="conteudo4">
             <div class="blog-post__conteudo">
                 <div class="blog-post__container animate__animated animate__fadeIn" id="anatomia">

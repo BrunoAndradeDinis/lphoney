@@ -42,7 +42,7 @@ body::-webkit-scrollbar{
     overflow: hidden;
     padding: .3rem;
     transition: all .5s ease-out;
-    width: 30rem;
+    width: 60vw;
 }
 
 .botoes:hover{

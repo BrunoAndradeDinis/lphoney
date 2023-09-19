@@ -30,6 +30,8 @@
 }
 .blog-post__imagem img {
     width: 100vw;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .blog-post__infos {
@@ -89,4 +91,8 @@
         position: relative;
         top: 95vh;
     }
+}
+
+iframe {
+
 }

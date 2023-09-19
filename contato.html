@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/variaveis.css">
+    <link rel="stylesheet" href="./assets/css/principal/contato.css">
+</head>
+
+<body>
+    <!-- Main  -->
+    <div>
+        <div class="principal__contato">
+            <section class="formularios">
+                <form name="formulario" id="formulario">
+                    <fieldset class="principal__forms">
+                        <legend>Dados para contato</legend>
+    
+                        <label for="nome">Nome</label>
+                        <input type="text" name="dados_contato" id="nome" placeholder="Seu nome"
+                            class="input-container--invalido" required>
+    
+                        <label for="email">E-mail</label>
+                        <input type="email" name="dados_contato" id="email" placeholder="Seu e-mail"
+                            class="input-container--invalido" required>
+    
+                        <label for="whats"> WhatsApp</label>
+                        <input type="tel" name="dados_contato" id="whats" placeholder="Seu WhatsApp"
+                            class="input-container--invalido" required>
+    
+                    </fieldset>
+                    <fieldset class="principal__forms">
+                        <legend>Qual tipo de serviço você está buscando?</legend>
+    
+                        <label for="branding">
+                            <input type="checkbox" name="dados-orcamento" id="branding" value="Branding">
+                            Branding
+                        </label>
+    
+                        <label for="id_visual">
+                            <input type="checkbox" name="dados-orcamento" id="id_visual" value="Identidade Visual">
+                            Identidade Visual
+                        </label>
+    
+                        <label for="s_media">
+                            <input type="checkbox" name="dados-orcamento" id="s_media" value="Social media">
+                            Social media
+                        </label>
+    
+                        <label for="packaging">
+                            <input type="checkbox" name="dados-orcamento" id="packaging" value="Packaging">
+                            Packaging
+                        </label>
+    
+                        <label for="outro">
+                            <input type="checkbox" name="dados-orcamento" id="outro" value="Outro">
+                            Outro
+                        </label>
+    
+    
+                    </fieldset>
+                    <fieldset class="principal__forms">
+                        <legend>Qual o seu budget disponível pra esse projeto? </legend>
+    
+                        <label for="entre800">
+                            <input type="radio" name="budget" id="entre800" value="entre R$800 e R$1000" checked>
+                            entre R$800 e R$1000
+                        </label>
+    
+                        <label for="entre1000">
+                            <input type="radio" name="budget" id="entre1000" value="entre R$1000 e R$1500">
+                            entre R$1000 e R$1500
+                        </label>
+    
+                        <label for="entre1500">
+                            <input type="radio" name="budget" id="entre1500" value="entre R$1500 e R$2500">
+                            entre R$1500 e R$2500
+                        </label>
+    
+                        <label for="entre2500">
+                            <input type="radio" name="budget" id="entre2500" value="entre R$2500 e R$3000">
+                            entre R$2500 e R$3000
+                        </label>
+    
+                        <label for="acima3000">
+                            <input type="radio" name="budget" id="acima3000" value="acima de R$3000">
+                            acima de R$3000
+                        </label>
+    
+                    </fieldset>
+                    <fieldset class="principal__forms">
+                        <legend>Adicione aqui todos os detalhes importantes sobre seu projeto:</legend>
+    
+                        <textarea name="dados_contato" id="projeto"></textarea>
+                    </fieldset>
+                    <fieldset class="principal__forms">
+                        <legend>Onde encontrou o HANA studio?</legend>
+    
+                        <label for="google">
+                            <input type="radio" name="donde" id="google" value="Google" checked>
+                            Google
+                        </label>
+    
+                        <label for="redes__sociais">
+                            <input type="radio" name="donde" id="redes__sociais" value="Redes sociais">
+                            Redes sociais
+                        </label>
+    
+                        <label for="indication">
+                            <input type="radio" name="donde" id="indication" value="Indicação">
+                            Indicação
+                        </label>
+    
+                        <label for="outros">
+                            <input type="radio" name="donde" id="outros" value="Outro">
+                            Outro
+                        </label>
+    
+                    </fieldset>
+    
+                    <button type="submit" class="botoes">enviar</button>
+                </form>
+                <div id="resposta">
+                    <fieldset class="principal__forms">
+                        <legend>Confirmar dados</legend>
+    
+                        <div>
+                            <label for="confirmado"></label>
+                            <form onsubmit="sendEmail(); reset(); return false;">
+                                <button type="submit" id="confirmado" class="botoes">confirmado</button>
+                            </form>
+    
+                        </div>
+    
+                        <label for="fechar" class="fechar">x</label>
+                        <input type="checkbox" id="fechar">
+                    </fieldset>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./assets/js/formulario.js">
+    </script>
+
+</body>
+
+</html>
