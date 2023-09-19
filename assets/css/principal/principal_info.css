@@ -1,8 +1,8 @@
 .principal__info p {
-    width: 16ch;
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem;
+    width: 16ch;
 }
 
 .fechar {
@@ -16,9 +16,9 @@
 
 .fechar:hover,
 .fechar:focus {
-    cursor: pointer;
     border-radius: 30% 30% 0 0;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 #fechar {
@@ -26,12 +26,12 @@
 }
 
 .pop_up {
-    width: 90vw;
-    height: 90vh;
-    position: fixed;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
+    display: none;
+    height: 90vh;
+    margin: 0 auto;
+    position: fixed;
+    width: 90vw;
     z-index: 9999;
 }
 
