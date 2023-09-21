@@ -41,7 +41,7 @@ function sendEmail() {
     Subject: "Nova solicitação realizada pelo site!",
     Body: `${infos}`
   }).then(
-    message => alert(message)
+    message => console.log(message)
   );
 
   document.getElementById('resposta').style.display = 'none'

@@ -33,8 +33,12 @@ body {
     width: 55vw;
 }
 
-.principal__forms input {
+.principal__forms  {
     margin: 1rem;
+}
+
+textarea, input {
+    color: var(--fundo-preto);
 }
 
 .principal__forms label {

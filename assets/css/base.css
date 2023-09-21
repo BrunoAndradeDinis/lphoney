@@ -32,7 +32,7 @@ body::-webkit-scrollbar{
     color: var(--texto);
     cursor: pointer;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     height: 2rem;
     justify-content: center;
@@ -48,4 +48,15 @@ body::-webkit-scrollbar{
     transform: scale(.9);
     background-position: left bottom;
     color: var(--fundo-preto);
+}
+@media (min-width: 640px){
+    .botoes {
+        font-size: 2rem;
+        width: 30vw;
+    }
+}
+@media (min-width: 900px){
+    .botoes {
+        width: 16vw;
+    }
 }

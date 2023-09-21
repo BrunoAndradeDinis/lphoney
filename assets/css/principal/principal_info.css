@@ -52,3 +52,14 @@ iframe {
     z-index: 2;
     box-shadow: 0 0 0 5rem rgba(0, 0, 0, 0.5);
 }
+
+.principal__info .conteudo__botao .botoes {
+    color: var(--fundo-preto);
+    background: linear-gradient(to right, var(--fundo-preto) 50%, var(--texto) 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+}
+.principal__info .conteudo__botao .botoes:hover {
+    color: var(--texto);
+    background-position: left bottom;
+}

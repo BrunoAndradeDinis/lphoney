@@ -44,3 +44,23 @@
     gap: .5rem;
     align-items: flex-end;
 }
+
+@media (min-width: 800px){
+    .contato__info {
+        margin: 0;
+        gap: .3rem;
+    }
+
+    .contato__info p {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .contato__info--mail, .contato__info--whats {
+        font-size: 1.3rem;
+        gap: .3rem
+    }
+
+    .contato__logo {
+        margin-top: 1.3rem;
+    }
+}

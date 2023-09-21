@@ -73,7 +73,7 @@
 }
 
 /* Media queries */
-@media (min-width: 900px){
+@media (min-width: 700px){
     .agrupamento__animacao {
         transform: scale(2);
     }

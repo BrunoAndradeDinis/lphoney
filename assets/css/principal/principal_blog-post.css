@@ -83,6 +83,7 @@
     display: none;
 }
 
+
 @media (max-width: 380px){
     .principal__blog-post{
         height: 120vh;
@@ -93,6 +94,48 @@
     }
 }
 
-iframe {
+@media (min-width: 640px) and (max-width: 900px) {
+    .principal__blog-post h2 {
+        font-size: 2.7rem;
+    }
 
+    .principal__blog-post h3 {
+        font-size: 2.1rem;
+    }
+
+    .principal__blog-post p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 840px){
+    .blog-post__conteudo{
+        margin: 0 0 0 1rem;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    .blog-post__container, #storytelling, #identidade {
+        width: 30%;
+        display: flex !important;
+    }
+
+    .blog-post__imagem img {
+        width: 100%;
+    }
+
+    .blog-post__infos {
+        padding-left: 0;
+    }
+
+    a[href="#storytelling"], a[href="#identidade"], a[href="#anatomia"] {
+        display: none;
+    }
+    .blog-post__button a{ 
+        padding: 0;
+    }
+    .blog-post__button {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 ;
+    }
 }
